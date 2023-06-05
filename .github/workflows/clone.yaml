@@ -20,6 +20,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           repository: chm-diederichs/action-test-target
+          token: ${{ secrets.TRIGGER_GITHUB_TOKEN }}
           path: target
       - name: install node
         uses: actions/setup-node@v3

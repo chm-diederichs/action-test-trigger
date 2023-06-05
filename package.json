@@ -1,0 +1,23 @@
+{
+  "name": "action-test-trigger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chm-diederichs/action-test-trigger.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chm-diederichs/action-test-trigger/issues"
+  },
+  "homepage": "https://github.com/chm-diederichs/action-test-trigger#readme",
+  "devDependencies": {
+    "brittle": "^3.3.0"
+  }
+}

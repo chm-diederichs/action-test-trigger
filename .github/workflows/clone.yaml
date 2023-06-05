@@ -23,7 +23,7 @@ jobs:
         with:
           github-token: ${{ secrets.TRIGGER_GITHUB_TOKEN }}
         run: |
-          git clone chm-diederichs/action-test-target.git
+          git clone git@github.com:chm-diederichs/action-test-target.git
           npm i
           npm i chm-diederichs/actions-test-trigger
           npm test

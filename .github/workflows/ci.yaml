@@ -32,6 +32,6 @@ jobs:
             await github.rest.actions.createWorkflowDispatch({
               owner: 'chm-diederichs',
               repo: 'action-test-target',
-              workflow_id: 'ci.yaml',
+              workflow_id: 'dependency.yaml',
               ref: 'main'
             })

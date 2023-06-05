@@ -23,5 +23,5 @@ jobs:
         run: |
           git clone https://github.com/chm-diederichs/action-test-target.git
           npm i
-          npm i chm-diederichs/actions-test-trigger
+          npm i https://github.com/chm-diederichs/actions-test-trigger
           npm test

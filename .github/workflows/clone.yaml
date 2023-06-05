@@ -14,7 +14,13 @@ jobs:
         os: [ubuntu-latest]
     timeout-minutes: 30
     steps:
-      - uses: actions/checkout@v3
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: checkout target
+        uses: actions/checkout@v3
+        with:
+          repository: chm-diederichs/action-test-target
+          path: target
       - name: install node
         uses: actions/setup-node@v3
         with:
@@ -23,7 +29,8 @@ jobs:
         with:
           github-token: ${{ secrets.TRIGGER_GITHUB_TOKEN }}
         run: |
-          git clone git@github.com:chm-diederichs/action-test-target.git
-          npm i
-          npm i chm-diederichs/actions-test-trigger
+          echo $PWD
+          ls
+          cd target
+          npm i $GITHUB_WORKSPACE
           npm test

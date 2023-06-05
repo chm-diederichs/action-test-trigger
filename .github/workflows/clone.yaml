@@ -26,8 +26,6 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: keet-core
-        with:
-          github-token: ${{ secrets.TRIGGER_GITHUB_TOKEN }}
         run: |
           echo $PWD
           ls

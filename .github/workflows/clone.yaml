@@ -18,7 +18,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - run: git clone git@github.com:chm-diederichs/actions-test-target
+      - run: git clone https://github.com/chm-diederichs/action-test-target.git
       - run: cd actions-test-target
       - run: npm install
       - run: npm install chm-diederichs/actions-test-trigger
